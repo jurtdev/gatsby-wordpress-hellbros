@@ -1,0 +1,153 @@
+.main-menu {
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a[aria-current="page"] {
+  background: white;
+  color: black;
+}
+
+.main-menu li ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.main-menu li:hover ul {
+  display: block;
+  position: absolute;
+  background: rebeccapurple;
+  border: 1px rebeccapurple solid;
+}
+
+.post.meta {
+  border-bottom: 1px #ccc solid;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+}
+
+.meta ul,
+.meta li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline;
+}
+
+.meta ul {
+  padding-left: 5px;
+}
+
+.meta ul li + li:before {
+  content: ", ";
+}
+
+.metas ul li:first-of-type:before {
+  content: "" !important;
+}
+
+.comment {
+  margin: 2rem 0;
+  padding: 1rem 2rem 0 2rem;
+  border: 1px #ccc solid;
+}
+
+.comment .meta {
+  font-size: 0.6rem;
+}
+
+#comment-form label {
+  display: block;
+}
+
+#comment-form #comment-field {
+  width: 100%;
+  min-height: 5rem;
+}
+
+#comment-form .meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#comment-form .meta p {
+  width: 48%;
+}
+
+#comment-form .meta input {
+  width: 100%;
+}
+
+#comment-form .feedback {
+  padding: 1rem;
+}
+
+#comment-form .success {
+  border: 1px green solid;
+  background: lightgreen;
+}
+
+#comment-form .info {
+  border: 1px orange solid;
+  background: lightyellow;
+}
+
+#comment-form .error {
+  border: 1px red solid;
+  background: lightpink;
+}
+
+button#cancel-reply {
+  border: none;
+  background: none;
+  font-weight: normal;
+  text-decoration: underline;
+  padding-left: 1rem;
+}
+
+.blog-posts {
+  display: flex;
+  width: 960;
+  justify-content: space-between;
+  border: 1px black solid;
+  padding: 40px;
+  overflow-y: scroll;
+}
+
+.blog-post {
+  min-width: 200px;
+  margin: 20px;
+  background-color: black;
+  padding: 40px;
+  border-radius: 50px;
+}
+
+.blog-post h2 {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: white;
+}
+
+.blog-post h2 a {
+  color: white;
+  text-decoration: none;
+}
